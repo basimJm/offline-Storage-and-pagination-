@@ -53,18 +53,13 @@ dependencies {
 
 
     //dagger hilt
-    implementation ("com.google.dagger:hilt-android:2.44")
-    implementation ("androidx.navigation:navigation-fragment-ktx:2.5.3")
-    implementation ("androidx.navigation:navigation-ui-ktx:2.5.3")
-    kapt ("com.google.dagger:hilt-compiler:2.44")
+    implementation ("com.google.dagger:hilt-android:2.50")
+    kapt ("com.google.dagger:hilt-compiler:2.50")
 
     // Retrofit
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
-    //navigation
-    implementation ("androidx.navigation:navigation-fragment-ktx:2.5.3")
-    implementation ("androidx.navigation:navigation-ui-ktx:2.5.3")
 
     //fragment
     implementation ("androidx.fragment:fragment-ktx:1.5.7")
@@ -75,8 +70,8 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
 
     //Room components
-    implementation ("androidx.room:room-runtime:2.4.3")
-    kapt ("androidx.room:room-compiler:2.4.3")
+//    implementation ("androidx.room:room-runtime:2.4.3")
+//    kapt ("androidx.room:room-compiler:2.4.3")
 
     //Extensions and coroutines for room
     implementation ("androidx.room:room-ktx:2.4.3")
@@ -84,4 +79,15 @@ dependencies {
     // Navigation
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.7")
+
+
+    //paging3
+    implementation("androidx.paging:paging-runtime:3.2.1")
+
+    //coil
+    implementation("io.coil-kt:coil:2.6.0")
+}
+kapt {
+    correctErrorTypes = true
+    useBuildCache = true
 }

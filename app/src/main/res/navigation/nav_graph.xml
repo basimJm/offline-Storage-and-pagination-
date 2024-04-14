@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.blackhand.trainingapp.ui.HomeFragment"
+        android:name="com.blackhand.trainingapp.ui.home.HomeFragment"
         android:label="HomeFragment" />
 </navigation>
