@@ -1,7 +1,8 @@
-package com.blackhand.trainingapp
+package com.blackhand.trainingapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.blackhand.trainingapp.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

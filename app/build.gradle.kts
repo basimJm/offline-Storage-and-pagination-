@@ -86,8 +86,15 @@ dependencies {
 
     //coil
     implementation("io.coil-kt:coil:2.6.0")
+
+    //RoomDB
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-paging:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+
 }
+
 kapt {
-    correctErrorTypes = true
-    useBuildCache = true
+correctErrorTypes=true
 }

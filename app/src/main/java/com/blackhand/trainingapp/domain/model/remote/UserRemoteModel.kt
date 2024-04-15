@@ -1,4 +1,4 @@
-package com.blackhand.trainingapp.domain.model
+package com.blackhand.trainingapp.domain.model.remote
 
 import com.google.gson.annotations.SerializedName
 

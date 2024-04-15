@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">trainingApp</string>
+    <string name="you_are_connected">"You Are Connected "</string>
 </resources>

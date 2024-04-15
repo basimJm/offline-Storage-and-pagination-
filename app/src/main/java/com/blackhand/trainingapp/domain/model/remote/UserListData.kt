@@ -1,14 +1,19 @@
-package com.blackhand.trainingapp.domain.model
+package com.blackhand.trainingapp.domain.model.remote
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "users")
 data class UserListData(
-    @SerializedName("__v")
-    val v: Int? = null,
-    @SerializedName("_id")
-    val id: String? = null,
+    @PrimaryKey(autoGenerate = false)
+    @ColumnInfo(name = "_id")
+    val _id: String,
     @SerializedName("age")
     val age: String? = null,
+    @SerializedName("__v")
+    val v: Int? = null,
     @SerializedName("description")
     val description: String? = null,
     @SerializedName("image")

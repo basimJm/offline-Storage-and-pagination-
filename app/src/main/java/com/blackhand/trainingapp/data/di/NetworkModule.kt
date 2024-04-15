@@ -1,6 +1,6 @@
 package com.blackhand.trainingapp.data.di
 
-import com.blackhand.trainingapp.data.service.UserService
+import com.blackhand.trainingapp.data.datasource.remote.UserService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

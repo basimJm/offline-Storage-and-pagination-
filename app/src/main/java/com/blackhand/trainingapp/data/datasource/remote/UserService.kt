@@ -1,7 +1,6 @@
-package com.blackhand.trainingapp.data.service
+package com.blackhand.trainingapp.data.datasource.remote
 
-import com.blackhand.trainingapp.domain.model.UserListData
-import com.blackhand.trainingapp.domain.model.UserRemoteModel
+import com.blackhand.trainingapp.domain.model.remote.UserRemoteModel
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

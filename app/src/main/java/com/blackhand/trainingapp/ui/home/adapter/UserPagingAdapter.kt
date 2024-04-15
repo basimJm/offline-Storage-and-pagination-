@@ -6,7 +6,7 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.blackhand.trainingapp.databinding.UserItemListBinding
-import com.blackhand.trainingapp.domain.model.UserListData
+import com.blackhand.trainingapp.domain.model.remote.UserListData
 
 class UserPagingAdapter() :
     PagingDataAdapter<UserListData, UserPagingAdapter.UserViewHolder>(UserComparator) {
@@ -31,7 +31,7 @@ class UserPagingAdapter() :
     object UserComparator : DiffUtil.ItemCallback<UserListData>() {
         override fun areItemsTheSame(oldItem: UserListData, newItem: UserListData): Boolean {
 
-            return oldItem.id == newItem.id
+            return oldItem._id == newItem._id
         }
 
         override fun areContentsTheSame(oldItem: UserListData, newItem: UserListData): Boolean {
